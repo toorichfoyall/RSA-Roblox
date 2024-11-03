@@ -13,7 +13,7 @@ I am not responsible for your ban, it is your choice to cheat.
 
 ### Method 1.
 Run this script in your executor.
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Yizziii/RSA-Roblox/refs/heads/main/RSA.lua"))()
+"loadstring(game:HttpGet("https://raw.githubusercontent.com/Yizziii/RSA-Roblox/refs/heads/main/RSA.lua"))()"
 To know if it works, execute the script and just click your screen. this should point your camera to a random player
 
 ### Method 2.
