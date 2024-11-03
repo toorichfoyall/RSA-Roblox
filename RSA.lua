@@ -36,15 +36,16 @@ end
 
 -- Silent aim functionality with headshots
 UserInputService.InputBegan:Connect(function(input)
-if input.UserInputType == Enum.UserInputType.MouseButton1 and silentAimActive then
-local targetHead = getNearestHead()
-if targetHead then
-local aimPosition = targetHead.Position
-Camera.CFrame = CFrame.new(Camera.CFrame.Position, aimPosition)
-ReplicatedStorage.Remotes.Attack:FireServer(targetHead)
-end
-end
+    if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.KeyCode == Enum.KeyCode.ButtonR2) and silentAimActive then
+        local targetHead = getNearestHead()
+        if targetHead then
+            local aimPosition = targetHead.Position
+            Camera.CFrame = CFrame.new(Camera.CFrame.Position, aimPosition)
+            ReplicatedStorage.Remotes.Attack:FireServer(targetHead)
+        end
+    end
 end)
+
 
 -- ESP Function for a player
 local function createESP(player)
