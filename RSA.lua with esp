@@ -9,7 +9,7 @@ local LocalPlayer = Players.LocalPlayer
 
 -- Variables
 local silentAimActive = true
-local espActive = false
+local espActive = true
 local espList = {} -- Keep track of ESP drawings
 
 -- Function to get the nearest target's head
